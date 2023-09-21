@@ -1,0 +1,134 @@
+/* (Mini) Reset do CSS para resetar as propriedades mais comuns que são aplicadas pelo navegador, a fim de eliminar possiveis incompatibilidades entre navegadores  */
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: initial;
+    font-weight: initial;
+    text-align: initial;
+}
+
+/* Estilos definidos para a pagina de documentação */
+
+body {
+    width: 94%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 32pt;
+    font-style: italic;
+    color: #ff0000;
+}
+
+h2 {
+    font-size: 26pt;
+    font-style: italic;
+    margin-top: 10px;
+    color: #2f00ff;
+}
+
+h3 {
+    font-size: 22pt;
+    font-style: italic;
+    color: #6565dd;
+    margin-top: 15px;
+}
+
+h4 {
+    font-size: 18pt;
+    font-style: italic;
+    color: rgb(118, 134, 189);
+    margin-top: 30px;
+}
+
+h1, h2, h3, h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+table {
+    text-align:left;
+}
+
+p, table {
+    margin: 20px 0;
+}
+p {
+    line-height: 1.5;
+    font-size: 16pt;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+td, th {
+    font-size: 16pt;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(221, 217, 212);
+}
+
+caption {
+    font-size: 30pt;
+    text-align: center;
+}
+
+
+
+/* Estilos de classe */
+
+.descricao-propriedade{
+    text-align:justify;
+
+   
+}
+
+.container { 
+    height:  300px;
+    border: 5px #ff0000;
+    background-color:bisque;
+    border-style: groove;
+}
+
+
+.contido {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 5px solid #0000ff;
+}
+
+
+.display-flex {
+    display: flex;
+    
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+.justify-content-flex-start {
+    justify-content:flex-start;
+}
+
+.justify-content-flex-end {
+    justify-content:flex-end;
+}
+
+.justify-content-space-evenly {
+    justify-content: space-evenly;
+}
+
+.flex-direction-row {
+    flex-direction: row;
+}
