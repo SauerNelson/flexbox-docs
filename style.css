@@ -61,6 +61,13 @@ p {
     text-align: justify;
 }
 
+li{
+    text-align:justify;
+    font-size: 15pt;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 td, th {
     font-size: 16pt;
 }
@@ -131,4 +138,40 @@ caption {
 
 .flex-direction-row {
     flex-direction: row;
+}
+
+.flex-direction-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.flex-direction-column-reverse {
+    flex-direction: column-reverse;
+}
+
+.align-items-normal {
+    align-items:normal
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-flex-start {
+    align-items: flex-start;
+}
+
+.align-items-flex-end {
+    align-items: flex-end;
+}
+
+.align-items-end {
+    align-items: end;
+}
+
+.align-items-baseline {
+    align-items: baseline;
 }
