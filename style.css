@@ -14,12 +14,14 @@
 body {
     width: 94%;
     margin: auto;
+    background-color:antiquewhite;
 }
 
 h1 {
     font-size: 32pt;
     font-style: italic;
     color: #ff0000;
+    font-weight: bold;
 }
 
 h2 {
@@ -27,6 +29,7 @@ h2 {
     font-style: italic;
     margin-top: 10px;
     color: #2f00ff;
+    font-weight: bold;
 }
 
 h3 {
@@ -34,6 +37,7 @@ h3 {
     font-style: italic;
     color: #6565dd;
     margin-top: 15px;
+    font-weight: bold;
 }
 
 h4 {
@@ -41,6 +45,7 @@ h4 {
     font-style: italic;
     color: rgb(118, 134, 189);
     margin-top: 30px;
+    font-weight: bold;
 }
 
 h1, h2, h3, h4 {
@@ -93,9 +98,10 @@ caption {
 
 .container { 
     height:  300px;
-    border: 5px #ff0000;
-    background-color:bisque;
+    border: 5px #0015ff;
+    background-color:rgb(0, 0, 0);
     border-style: groove;
+    border-radius: 15px;
 }
 
 
@@ -103,7 +109,9 @@ caption {
     width: 100px;
     height: 100px;
     background-color: aqua;
-    border: 5px solid #0000ff;
+    border: 5px solid #ff0000;
+    border-radius: 15px;
+    text-align: center;
 }
 
 
@@ -186,5 +194,39 @@ caption {
 
 .flex-wrap-wrap-reverse {
     flex-wrap: wrap-reverse;
-    
+}
+
+.align-content-stretch {
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+.align-content-center {
+    align-content: center;
+    flex-wrap:wrap;
+}
+
+.align-content-flex-start {
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.align-content-flex-end {
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.align-content-space-between {
+    align-content:space-between;
+    flex-wrap: wrap;
+}
+
+.align-content-space-around {
+    align-content:space-around;
+    flex-wrap: wrap;
+}
+
+.align-content-space-evenly {
+    align-content: space-evenly;
+    flex-wrap: wrap;
 }

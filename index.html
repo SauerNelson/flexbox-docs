@@ -9,7 +9,44 @@
 </head>
 <body>
 
-    <h1>Flexbox</h1>
+    <h1 id="topo-pagina">Flexbox</h1>
+    <header">
+        <nav>
+          <hr>
+          <details> 
+            <summary> justify-content</summary>
+            <li><a href="#justify-content-center">justify-content-center</a></li>
+            <li><a href="#justify-content-space-between">justify-content-space-between</a></li>
+            <li><a href="#justify-content-space-around">justify-content-space-around</a></li>
+            <li><a href="#justify-content-flex-start">justify-content-flex-start</a></li>
+            <li><a href="#justify-content-flex-end">justify-content-flex-end</a></li>
+            <li><a href="#justify-content-space-evenly">justify-content-space-evenly</a></li>
+          </details>
+          </hr>
+          <hr>
+          <details> 
+            <summary> flex-direction</summary>
+            <li><a href="#flex-direction-row">flex-direction-row</a></li>
+            <li><a href="#flex-direction-row-reverse">flex-direction-row-reverse</a></li>
+            <li><a href="#flex-direction-column">flex-direction-column</a></li>
+            <li><a href="#flex-direction-column-reverse">flex-direction-column-reverse</a></li>
+          </details>
+          </hr>
+          <hr>
+          <details> 
+            <summary>align-items</summary>
+            <li><a href="#align-items-normal">#align-items-normal</a></li>
+            <li><a href="#align-items-stretch-start">align-items-stretch e start</a></li>
+            <li><a href="#align-items-center">align-items-center</a></li>
+            <li><a href="#align-items-flex-start">align-items-flex-start</a></li>
+            <li><a href="#align-items-flex-end">align-items-flex-end</a></li>
+            <li><a href="#align-items-end">align-items-end</a></li>
+            <li><a href="#align-items-baseline">align-items-baseline</a></li>
+            
+          </details>
+        </nav>
+      </header>
+      
     <h2>Documentação</h2>
     <h3>Display: Flex</h3>
 
@@ -50,7 +87,7 @@
         A propriedade justify-content pode ser usada para justificar o conteudo do elemento conteiner em seu eixo primario, ou seja, eixo x (row, row-reverse) ou eixo y (column, column-reverse).
     </p>
     <h4>Valores:</h4>
-    <h4>center</h4>
+    <h4 id="justify-content-center">center</h4>
     <p class="descricao-propriedade">
         O valor "center" vai alinhar o conteudo ao centro do eixo primario.
     </p>
@@ -61,12 +98,12 @@
         <div class="contido">2</div>
         <div class="contido">3</div>
         <div class="contido">4</div>
-        <div class="contido">5</div>
+        <div class="contido">5</div> 
     </div>
 
-<h4>space-between</h4>
+<h4 id="justify-content-space-between">space-between</h4>
 <p class="descricao-propriedade">
-    O valor "space-between" vai definir que os itens tenham espaço entre eles.
+    O valor "space-between" vai definir que os items tenham espaço entre eles.
 </p>
 <p>Exemplo:</p>
 
@@ -78,9 +115,9 @@
     <div class="contido">5</div>
 </div>
     
-<h4>space-around</h4>
+<h4 id="justify-content-space-around">space-around</h4>
 <p class="descricao-propriedade">
-    Os itens terão espaços antes, entre eles, e depois.
+    Os items terão espaços antes, entre eles, e depois.
 </p>
 <p>Exemplo:</p>
 
@@ -93,9 +130,9 @@
 </div>
 
 
-<h4>flex-start</h4>
+<h4 id="justify-content-flex-start">flex-start</h4>
 <p class="descricao-propriedade">
-    Este é o valor padrão da propriedade justify-content, os itens serão posicionados no inicio do container.
+    Este é o valor padrão da propriedade justify-content, os items serão posicionados no inicio do container.
 </p>
 <p>Exemplo:</p>
 
@@ -107,9 +144,9 @@
     <div class="contido">5</div>
 </div>
 
-<h4>flex-end</h4>
+<h4 id="justify-content-flex-end">flex-end</h4>
 <p class="descricao-propriedade">
-    Este valor definirá que os itens serão posicionados no fim do conteiner, no eixo primario. 
+    Este valor definirá que os items serão posicionados no fim do conteiner, no eixo primario. 
 </p>
 <p>Exemplo:</p>
 
@@ -122,9 +159,9 @@
 </div>
 
 
-<h4>space-evenly</h4>
+<h4 id="justify-content-space-evenly">space-evenly</h4>
 <p class="descricao-propriedade">
-    Esse valor definirá que todos os itens terão espaços iguais entre, e ao redor deles no eixo primario. 
+    Esse valor definirá que todos os items terão espaços iguais entre, e ao redor deles no eixo primario. 
 </p>
 <p>Exemplo:</p>
 
@@ -137,15 +174,15 @@
 </div>
 
 
-<h3>flex-direction</h3>
-<p>A propriedade flex-direction define o eixo primário, dando uma direção para os itens flexiveis dentro do container</p>
+<h3 id="flex-direction">flex-direction</h3>
+<p>A propriedade flex-direction define o eixo primário, dando uma direção para os items flexiveis dentro do container</p>
 
 <h4>Valores:</h4>
-<h4>row</h4>
+<h4 id="flex-direction-row">row</h4>
 <p class="descricao-propriedade">
-    Esse valor é o valor padrão da propriedade flex-direction. Os itens serão exibidos horizontalmente, no eixo x, como uma linha. 
+    Esse valor é o valor padrão da propriedade flex-direction. Os items serão exibidos horizontalmente, no eixo x, como uma linha. 
 </p>
-<p>Exemplo</p>
+<p>Exemplo:</p>
 <div class="container display-flex flex-direction-row">
     <div class="contido">1</div>
     <div class="contido">2</div>
@@ -154,11 +191,11 @@
     <div class="contido">5</div>
 </div>
 
-<h4>row-reverse</h4>
+<h4 id="flex-direction-row-reverse">row-reverse</h4>
 <p class="descricao-propriedade"> 
     Esse valor é igual o row, só que em ordem reversa.
 </p>
-<p>Exemplo</p>
+<p>Exemplo:</p>
 <div class="container display-flex flex-direction-row-reverse">
     <div class="contido">1</div>
     <div class="contido">2</div>
@@ -167,11 +204,11 @@
     <div class="contido">5</div>
 </div>
 
-<h4>column</h4>
+<h4 id="flex-direction-column">column</h4>
 <p class="descricao-propriedade"> 
-    Nesse valor, os itens serão exibidos verticalmente, definindo o eixo primário como eixo Y.
+    Nesse valor, os items serão exibidos verticalmente, definindo o eixo primário como eixo Y.
 </p>
-<p>Exemplo</p>
+<p>Exemplo:</p>
 <div class="container display-flex flex-direction-column">
     <div class="contido">1</div>
     <div class="contido">2</div>
@@ -180,11 +217,11 @@
     <div class="contido">5</div>
 </div>
 
-<h4>column-reverse</h4>
+<h4 id="flex-direction-column-reverse">column-reverse</h4>
 <p class="descricao-propriedade"> 
     Como no row-reverse, esse valor define a exibição igual ao column, porém, em ordem reversa.
 </p>
-<p>Exemplo</p>
+<p>Exemplo:</p>
 <div class="container display-flex flex-direction-column-reverse">
     <div class="contido">1</div>
     <div class="contido">2</div>
@@ -193,23 +230,23 @@
     <div class="contido">5</div>
 </div>
 
-<h3></h3>
-<p>A propriedade align-items define o alinhamento padrão para os itens dentro de um container ou container de grade</p>
+<h3>align-items</h3>
+<p>A propriedade align-items define o alinhamento padrão para os items dentro de um container ou container de grade</p>
 
 <h4>Valores:</h4>
-<h4>normal</h4>
+<h4 id="align-items-normal">normal</h4>
 <p class="descricao-propriedade">
-    É o valor padrão, comporta-se como "stretch" para flex-box e itens de grade, ou como "start" para itens de grade que tem tamanho de bloco definido. 
+    É o valor padrão, comporta-se como "stretch" para flex-box e items de grade, ou como "start" para items de grade que tem tamanho de bloco definido. 
 </p>
     
     <tr>
-        <li>Em um container flex-box, os itens são alinhados no eixo cruzado, que por padrão é vertical. (oposto a direção flexivel)
+        <li>Em um container flex-box, os items são alinhados no eixo cruzado, que por padrão é vertical. (oposto a direção flexivel)
         </li>
-        <li>Em um container de grade, os itens da grade serão alinhados na direção do bloco. Para paginas em ingles, a direção do bloco é sempre para baixo, e a direção embutida sempre será da esquerda para a direita
+        <li>Em um container de grade, os items da grade serão alinhados na direção do bloco. Para paginas em ingles, a direção do bloco é sempre para baixo, e a direção embutida sempre será da esquerda para a direita
         </li>
     </tr>
 
-<p>Exemplo</p>
+<p>Exemplo:</p>
 <div class="container display-flex align-items-normal">
     <div class="contido">1</div>
     <div class="contido">2</div>
@@ -219,19 +256,19 @@
 </div>
 
 
-<h4>stretch e start</h4>
+<h4 id="align-items-stretch-start">stretch e start</h4>
 <p class="descricao-propriedade">
-    No valor stretch, os itens serão esticados para caber no container. Ficaria exatamente como no exemplo acima, conforme citado.
+    No valor stretch, os items serão esticados para caber no container. Ficaria exatamente como no exemplo acima, conforme citado.
 </p>
 <p>
-    No valor start os itens serão posicionados no início de suas células individuais da grade, na direção do bloco. Como estamos lidando com exemplos de flex-box, e não de um container de grade, esse valor não surtirá efeito, e ficará igual ao exemplo anterior, conforme citado. 
+    No valor start os items serão posicionados no início de suas células individuais da grade, na direção do bloco. Como estamos lidando com exemplos de flex-box, e não de um container de grade, esse valor não surtirá efeito, e ficará igual ao exemplo anterior, conforme citado. 
 </p>
 
-<h4>center</h4>
+<h4 id="align-items-center">center</h4>
 <p class="descricao-propriedade"> 
-    Com esse valor, os itens serão posicionados ao centro do container, no eixo cruzado.
+    Com esse valor, os items serão posicionados ao centro do container, no eixo cruzado.
 </p>
-<p>Exemplo</p>
+<p>Exemplo:</p>
 <div class="container display-flex align-items-center">
     <div class="contido">1</div>
     <div class="contido">2</div>
@@ -240,11 +277,11 @@
     <div class="contido">5</div>
 </div>
 
-<h4>flex-start</h4>
+<h4 id="align-items-flex-start">flex-start</h4>
 <p class="descricao-propriedade"> 
-    Com esse valor, os itens serão posicionados no inicio do container.
+    Com esse valor, os items serão posicionados no inicio do container.
 </p>
-<p>Exemplo</p>
+<p>Exemplo:</p>
 <div class="container display-flex align-items-flex-start">
     <div class="contido">1</div>
     <div class="contido">2</div>
@@ -253,11 +290,11 @@
     <div class="contido">5</div>
 </div>
 
-<h4>flex-end</h4>
+<h4 id="align-items-flex-end">flex-end</h4>
 <p class="descricao-propriedade"> 
-    Os itens serão posicionados no final do container.
+    Os items serão posicionados no final do container.
 </p>
-<p>Exemplo</p>
+<p>Exemplo:</p>
 <div class="container display-flex align-items-flex-end">
     <div class="contido">1</div>
     <div class="contido">2</div>
@@ -266,11 +303,11 @@
     <div class="contido">5</div>
 </div>
 
-<h4>end</h4>
+<h4 id="align-items-end">end</h4>
 <p class="descricao-propriedade"> 
-    Os itens são posicionados no final de suas celulas individuais da grade, na direção do bloco.
+    Os items são posicionados no final de suas celulas individuais da grade, na direção do bloco.
 </p>
-<p>Exemplo</p>
+<p>Exemplo:</p>
 <div class="container display-flex align-items-end">
     <div class="contido">1</div>
     <div class="contido">2</div>
@@ -279,11 +316,11 @@
     <div class="contido">5</div>
 </div>
 
-<h4>baseline</h4>
+<h4 id="align-items-baseline">baseline</h4>
 <p class="descricao-propriedade"> 
-   Os itens serão posicionados na base da linha do container.
+   Os items serão posicionados na base da linha do container.
 </p>
-<p>Exemplo</p>
+<p>Exemplo:</p>
 <div class="container display-flex align-items-baseline">
     <div class="contido">1</div>
     <div class="contido">2</div>
@@ -294,13 +331,13 @@
 
 
 <h3>flex-wrap</h3>
-<p>A propriedade flex-wrap especifica se os itens flexiveis devem ser agrupados ou não. </p>
+<p>A propriedade flex-wrap especifica se os items flexiveis devem ser agrupados ou não. </p>
 <h4>Valores:</h4>
 <h4>nowrap</h4>
 <p class="descricao-propriedade">
-    Esse valor é o valor padrão da propriedade flex-wrap. Define que os itens flexiveis não serão agrupados.
+    Esse valor é o valor padrão da propriedade flex-wrap. Define que os items flexiveis não serão agrupados.
 </p>
-<p>Exemplo</p>
+<p>Exemplo:</p>
 
 <div class="container display-flex flex-wrap-nowrap">
     <div class="contido">1</div>
@@ -316,9 +353,9 @@
 
 <h4>wrap</h4>
 <p class="descricao-propriedade">
-    Especifica que os itens serão agrupados, se necessario. 
+    Especifica que os items serão agrupados, se necessario. 
 </p>
-<p>Exemplo</p>
+<p>Exemplo:</p>
 
 <div class="container display-flex flex-wrap-wrap">
     <div class="contido">1</div>
@@ -334,9 +371,9 @@
 
 <h4>wrap-reverse</h4>
 <p class="descricao-propriedade">
-    Especifica que os itens serão agrupados, se necessario, em ordem reversa.
+    Especifica que os items serão agrupados, se necessario, em ordem reversa.
 </p>
-<p>Exemplo</p>
+<p>Exemplo:</p>
 
 <div class="container display-flex flex-wrap-wrap-reverse">
     <div class="contido">1</div>
@@ -350,7 +387,193 @@
     <div class="contido">9</div>
 </div>
 
+<h3>align-content</h3>
+<p>A propriedade align-content define como as linhas flexiveis serão distribuidas ao longo do eixo cruzado do container flexbox.</p>
+<p>Lembrando que no layout flexbox, o eixo principal está no flex-direction que por padrão é a linha horizontal,e o eixo transversal é perpendicular ao eixo principal, sendo o eixo transversal, por padrão, vertical.</p>
+<p>A propriedade align-content também pode ser usada em um container de grade, alinhando items da grade na direção do bloco. </p>
 
+    
+<h4>Valores:</h4>
+<h4>stretch</h4>
+<p class="descricao-propriedade">
+    stretch é o valor padrão da propriedade align-content, fazendo com que as linhas se estiquem para ocupar o espaço restante.
+</p>
+<p>Exemplo:</p>
+
+<div class="container display-flex align-content-stretch">
+    <div class="contido">1</div>
+    <div class="contido">2</div>
+    <div class="contido">3</div>
+    <div class="contido">4</div>
+    <div class="contido">5</div>
+    <div class="contido">6</div>
+    <div class="contido">7</div> 
+    <div class="contido">8</div>
+    <div class="contido">9</div>
+    <div class="contido">10</div>
+    <div class="contido">11</div>
+    <div class="contido">12</div>
+    <div class="contido">13</div>
+    <div class="contido">14</div> 
+    <div class="contido">15</div>
+    <div class="contido">16</div>
+</div>
+
+<h4>center</h4>
+<p class="descricao-propriedade">
+    No valor center, as linhas são compactadas, em direção ao centro do container flex box.
+</p>
+<p>Exemplo:</p>
+
+<div class="container display-flex align-content-center">
+    <div class="contido">1</div>
+    <div class="contido">2</div>
+    <div class="contido">3</div>
+    <div class="contido">4</div>
+    <div class="contido">5</div>
+    <div class="contido">6</div>
+    <div class="contido">7</div> 
+    <div class="contido">8</div>
+    <div class="contido">9</div>
+    <div class="contido">10</div>
+    <div class="contido">11</div>
+    <div class="contido">12</div>
+    <div class="contido">13</div>
+    <div class="contido">14</div> 
+    <div class="contido">15</div>
+    <div class="contido">16</div>
+    
+    
+</div>
+
+<h4>flex-start</h4>
+<p class="descricao-propriedade">
+    As linhas são compactadas no inicio do container flex-box
+</p>
+<p>Exemplo:</p>
+
+<div class="container display-flex align-content-flex-start">
+    <div class="contido">1</div>
+    <div class="contido">2</div>
+    <div class="contido">3</div>
+    <div class="contido">4</div>
+    <div class="contido">5</div>
+    <div class="contido">6</div>
+    <div class="contido">7</div> 
+    <div class="contido">8</div>
+    <div class="contido">9</div>
+    <div class="contido">10</div>
+    <div class="contido">11</div>
+    <div class="contido">12</div>
+    <div class="contido">13</div>
+    <div class="contido">14</div> 
+    <div class="contido">15</div>
+    <div class="contido">16</div>
+</div>
+
+<h4>flex-end</h4>
+<p class="descricao-propriedade">
+    As linhas são compactadas no final do container flex-box. 
+</p>
+<p>Exemplo:</p>
+
+<div class="container display-flex align-content-flex-end">
+    <div class="contido">1</div>
+    <div class="contido">2</div>
+    <div class="contido">3</div>
+    <div class="contido">4</div>
+    <div class="contido">5</div>
+    <div class="contido">6</div>
+    <div class="contido">7</div> 
+    <div class="contido">8</div>
+    <div class="contido">9</div>
+    <div class="contido">10</div>
+    <div class="contido">11</div>
+    <div class="contido">12</div>
+    <div class="contido">13</div>
+    <div class="contido">14</div> 
+    <div class="contido">15</div>
+    <div class="contido">16</div>
+</div>
+
+<h4>space-between</h4>
+<p class="descricao-propriedade">
+    Nesse valor, as linhas são distribuidas igualmente dentro do container.
+</p>
+<p>Exemplo:</p>
+
+<div class="container display-flex align-content-space-between">
+    <div class="contido">1</div>
+    <div class="contido">2</div>
+    <div class="contido">3</div>
+    <div class="contido">4</div>
+    <div class="contido">5</div>
+    <div class="contido">6</div>
+    <div class="contido">7</div> 
+    <div class="contido">8</div>
+    <div class="contido">9</div>
+    <div class="contido">10</div>
+    <div class="contido">11</div>
+    <div class="contido">12</div>
+    <div class="contido">13</div>
+    <div class="contido">14</div> 
+    <div class="contido">15</div>
+    <div class="contido">16</div>
+</div>
+
+<h4>space-around</h4>
+<p class="descricao-propriedade">
+    Nesse valor, as linhas são distribuidas igualmente dentro do container, porém, com espaços de metade do tamanho em cada extremidade.
+</p>
+<p>Exemplo:</p>
+
+<div class="container display-flex align-content-space-around">
+    <div class="contido">1</div>
+    <div class="contido">2</div>
+    <div class="contido">3</div>
+    <div class="contido">4</div>
+    <div class="contido">5</div>
+    <div class="contido">6</div>
+    <div class="contido">7</div> 
+    <div class="contido">8</div>
+    <div class="contido">9</div>
+    <div class="contido">10</div>
+    <div class="contido">11</div>
+    <div class="contido">12</div>
+    <div class="contido">13</div>
+    <div class="contido">14</div> 
+    <div class="contido">15</div>
+    <div class="contido">16</div>
+</div>
+
+<h4>space-evenly</h4>
+<p class="descricao-propriedade">
+    Nesse valor, as linhas são distribuidas igualmente dentro do container, porém, com espaços iguais ao seu redor.
+</p>
+<p>Exemplo:</p>
+
+<div class="container display-flex align-content-space-evenly">
+    <div class="contido">1</div>
+    <div class="contido">2</div>
+    <div class="contido">3</div>
+    <div class="contido">4</div>
+    <div class="contido">5</div>
+    <div class="contido">6</div>
+    <div class="contido">7</div> 
+    <div class="contido">8</div>
+    <div class="contido">9</div>
+    <div class="contido">10</div>
+    <div class="contido">11</div>
+    <div class="contido">12</div>
+    <div class="contido">13</div>
+    <div class="contido">14</div> 
+    <div class="contido">15</div>
+    <div class="contido">16</div>
+</div>
+
+<Nav>
+    <a href="#topo-pagina">Topo</a>
+</Nav>
 </body>
 </html>
 
