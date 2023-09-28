@@ -12,7 +12,7 @@
     <h1 id="topo-pagina">Flexbox</h1>
     <header">
         <nav>
-          <hr>
+          <ul>
           <details> 
             <summary> justify-content</summary>
             <li><a href="#justify-content-center">justify-content-center</a></li>
@@ -22,8 +22,8 @@
             <li><a href="#justify-content-flex-end">justify-content-flex-end</a></li>
             <li><a href="#justify-content-space-evenly">justify-content-space-evenly</a></li>
           </details>
-          </hr>
-          <hr>
+          </ul>
+          <ul>
           <details> 
             <summary> flex-direction</summary>
             <li><a href="#flex-direction-row">flex-direction-row</a></li>
@@ -31,20 +31,40 @@
             <li><a href="#flex-direction-column">flex-direction-column</a></li>
             <li><a href="#flex-direction-column-reverse">flex-direction-column-reverse</a></li>
           </details>
-          </hr>
-          <hr>
+          </ul>
+          <ul>
           <details> 
             <summary>align-items</summary>
-            <li><a href="#align-items-normal">#align-items-normal</a></li>
+            <li><a href="#align-items-normal">align-items-normal</a></li>
             <li><a href="#align-items-stretch-start">align-items-stretch e start</a></li>
             <li><a href="#align-items-center">align-items-center</a></li>
             <li><a href="#align-items-flex-start">align-items-flex-start</a></li>
             <li><a href="#align-items-flex-end">align-items-flex-end</a></li>
             <li><a href="#align-items-end">align-items-end</a></li>
             <li><a href="#align-items-baseline">align-items-baseline</a></li>
-            
           </details>
-        </nav>
+          </ul>  
+          </nav>
+          <ul>
+            <details> 
+              <summary>flex-wrap</summary>
+              <li><a href="#flex-wrap-nowrap">flex-wrap-nowrap</a></li>
+              <li><a href="#flex-wrap-wrap">flex-wrap-wrap</a></li>
+              <li><a href="#flex-wrap-wrap-reverse">flex-wrap-wrap-reverse</a></li>
+             </details>
+          </ul>  
+          <ul>
+            <details> 
+              <summary>align-content</summary>
+              <li><a href="#align-content-stretch">align-content-stretch</a></li>
+              <li><a href="#align-content-center">align-content-center</a></li>
+              <li><a href="#align-content-flex-start">align-content-flex-start</a></li>
+              <li><a href="#align-content-flex-end">align-content-flex-end</a></li>
+              <li><a href="#align-content-space-between">align-content-space-between</a></li>
+              <li><a href="#align-content-space-around">align-content-space-around</a></li>
+              <li><a href="#align-content-space-evenly">align-content-space-evenly</a></li>
+             </details>
+          </ul>  
       </header>
       
     <h2>Documentação</h2>
@@ -394,7 +414,7 @@
 
     
 <h4>Valores:</h4>
-<h4>stretch</h4>
+<h4 id="align-content-stretch">stretch</h4>
 <p class="descricao-propriedade">
     stretch é o valor padrão da propriedade align-content, fazendo com que as linhas se estiquem para ocupar o espaço restante.
 </p>
@@ -419,7 +439,7 @@
     <div class="contido">16</div>
 </div>
 
-<h4>center</h4>
+<h4 id="align-content-center">center</h4>
 <p class="descricao-propriedade">
     No valor center, as linhas são compactadas, em direção ao centro do container flex box.
 </p>
@@ -446,7 +466,7 @@
     
 </div>
 
-<h4>flex-start</h4>
+<h4 id="align-content-flex-start">flex-start</h4>
 <p class="descricao-propriedade">
     As linhas são compactadas no inicio do container flex-box
 </p>
@@ -471,7 +491,7 @@
     <div class="contido">16</div>
 </div>
 
-<h4>flex-end</h4>
+<h4 id="align-content-flex-end">flex-end</h4>
 <p class="descricao-propriedade">
     As linhas são compactadas no final do container flex-box. 
 </p>
@@ -496,7 +516,7 @@
     <div class="contido">16</div>
 </div>
 
-<h4>space-between</h4>
+<h4 id="align-content-space-between">space-between</h4>
 <p class="descricao-propriedade">
     Nesse valor, as linhas são distribuidas igualmente dentro do container.
 </p>
@@ -521,7 +541,7 @@
     <div class="contido">16</div>
 </div>
 
-<h4>space-around</h4>
+<h4 id="align-content-space-around">space-around</h4>
 <p class="descricao-propriedade">
     Nesse valor, as linhas são distribuidas igualmente dentro do container, porém, com espaços de metade do tamanho em cada extremidade.
 </p>
@@ -546,7 +566,7 @@
     <div class="contido">16</div>
 </div>
 
-<h4>space-evenly</h4>
+<h4 id="align-content-space-evenly">space-evenly</h4>
 <p class="descricao-propriedade">
     Nesse valor, as linhas são distribuidas igualmente dentro do container, porém, com espaços iguais ao seu redor.
 </p>
