@@ -10,63 +10,22 @@
 <body>
 
     <h1 id="topo-pagina">Flexbox</h1>
-    <header">
-        <nav>
-          <ul>
-          <details> 
-            <summary> justify-content</summary>
-            <li><a href="#justify-content-center">justify-content-center</a></li>
-            <li><a href="#justify-content-space-between">justify-content-space-between</a></li>
-            <li><a href="#justify-content-space-around">justify-content-space-around</a></li>
-            <li><a href="#justify-content-flex-start">justify-content-flex-start</a></li>
-            <li><a href="#justify-content-flex-end">justify-content-flex-end</a></li>
-            <li><a href="#justify-content-space-evenly">justify-content-space-evenly</a></li>
-          </details>
-          </ul>
-          <ul>
-          <details> 
-            <summary> flex-direction</summary>
-            <li><a href="#flex-direction-row">flex-direction-row</a></li>
-            <li><a href="#flex-direction-row-reverse">flex-direction-row-reverse</a></li>
-            <li><a href="#flex-direction-column">flex-direction-column</a></li>
-            <li><a href="#flex-direction-column-reverse">flex-direction-column-reverse</a></li>
-          </details>
-          </ul>
-          <ul>
-          <details> 
-            <summary>align-items</summary>
-            <li><a href="#align-items-normal">align-items-normal</a></li>
-            <li><a href="#align-items-stretch-start">align-items-stretch e start</a></li>
-            <li><a href="#align-items-center">align-items-center</a></li>
-            <li><a href="#align-items-flex-start">align-items-flex-start</a></li>
-            <li><a href="#align-items-flex-end">align-items-flex-end</a></li>
-            <li><a href="#align-items-end">align-items-end</a></li>
-            <li><a href="#align-items-baseline">align-items-baseline</a></li>
-          </details>
-          </ul>  
-          </nav>
-          <ul>
-            <details> 
-              <summary>flex-wrap</summary>
-              <li><a href="#flex-wrap-nowrap">flex-wrap-nowrap</a></li>
-              <li><a href="#flex-wrap-wrap">flex-wrap-wrap</a></li>
-              <li><a href="#flex-wrap-wrap-reverse">flex-wrap-wrap-reverse</a></li>
-             </details>
-          </ul>  
-          <ul>
-            <details> 
-              <summary>align-content</summary>
-              <li><a href="#align-content-stretch">align-content-stretch</a></li>
-              <li><a href="#align-content-center">align-content-center</a></li>
-              <li><a href="#align-content-flex-start">align-content-flex-start</a></li>
-              <li><a href="#align-content-flex-end">align-content-flex-end</a></li>
-              <li><a href="#align-content-space-between">align-content-space-between</a></li>
-              <li><a href="#align-content-space-around">align-content-space-around</a></li>
-              <li><a href="#align-content-space-evenly">align-content-space-evenly</a></li>
-             </details>
-          </ul>  
-      </header>
-      
+    
+    <nav>
+        <div class="container-menu">
+        <a href="#" class="">Menu</a>
+        <ul class="">
+        <li><a href="#justify-content">justify-content</a></li>
+        <li><a href="#flex-direction">flex-direction</a></li>
+        <li><a href="#align-items">align-items</a></li>
+        <li><a href="#flex-wrap">flex-wrap</a></li>
+        <li><a href="#flex-wrap">flex-wrap</a></li>
+        </ul>
+        </div>
+    </nav>
+
+             
+            
     <h2>Documentação</h2>
     <h3>Display: Flex</h3>
 
@@ -102,7 +61,7 @@
         </tr>
     </table>
 
-    <h3>justify-content:</h3>
+    <h3 id="justify-content">justify-content:</h3>
     <p class="descricao-propriedade">
         A propriedade justify-content pode ser usada para justificar o conteudo do elemento conteiner em seu eixo primario, ou seja, eixo x (row, row-reverse) ou eixo y (column, column-reverse).
     </p>
@@ -250,7 +209,7 @@
     <div class="contido">5</div>
 </div>
 
-<h3>align-items</h3>
+<h3 id="align-items">align-items</h3>
 <p>A propriedade align-items define o alinhamento padrão para os items dentro de um container ou container de grade</p>
 
 <h4>Valores:</h4>
@@ -350,10 +309,10 @@
 </div>
 
 
-<h3>flex-wrap</h3>
+<h3 id="flex-wrap">flex-wrap</h3>
 <p>A propriedade flex-wrap especifica se os items flexiveis devem ser agrupados ou não. </p>
 <h4>Valores:</h4>
-<h4>nowrap</h4>
+<h4 id="flex-wrap-nowrap">nowrap</h4>
 <p class="descricao-propriedade">
     Esse valor é o valor padrão da propriedade flex-wrap. Define que os items flexiveis não serão agrupados.
 </p>
@@ -371,7 +330,7 @@
     <div class="contido">9</div>
 </div>
 
-<h4>wrap</h4>
+<h4 id="flex-wrap-wrap">wrap</h4>
 <p class="descricao-propriedade">
     Especifica que os items serão agrupados, se necessario. 
 </p>
@@ -389,7 +348,7 @@
     <div class="contido">9</div>
 </div>
 
-<h4>wrap-reverse</h4>
+<h4 id="flex-wrap-wrap-reverse">wrap-reverse</h4>
 <p class="descricao-propriedade">
     Especifica que os items serão agrupados, se necessario, em ordem reversa.
 </p>
@@ -407,7 +366,7 @@
     <div class="contido">9</div>
 </div>
 
-<h3>align-content</h3>
+<h3 id="align-content" >align-content</h3>
 <p>A propriedade align-content define como as linhas flexiveis serão distribuidas ao longo do eixo cruzado do container flexbox.</p>
 <p>Lembrando que no layout flexbox, o eixo principal está no flex-direction que por padrão é a linha horizontal,e o eixo transversal é perpendicular ao eixo principal, sendo o eixo transversal, por padrão, vertical.</p>
 <p>A propriedade align-content também pode ser usada em um container de grade, alinhando items da grade na direção do bloco. </p>
@@ -593,6 +552,7 @@
 
 <Nav>
     <a href="#topo-pagina">Topo</a>
+
 </Nav>
 </body>
 </html>

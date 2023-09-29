@@ -9,6 +9,8 @@
     text-align: initial;
 }
 
+
+
 /* Estilos definidos para a pagina de documentação */
 
 body {
@@ -93,7 +95,6 @@ caption {
 .descricao-propriedade{
     text-align:justify;
 
-   
 }
 
 .container { 
@@ -229,4 +230,27 @@ caption {
 .align-content-space-evenly {
     align-content: space-evenly;
     flex-wrap: wrap;
+}
+
+.container-menu {
+    display:flex;
+    height: 40px 50px ;
+    border: 1px #0015ff;
+    background-color:rgb(170, 168, 168);
+    border-style: groove;
+    border-radius: 15px;
+}
+
+a:hover {
+    font-size: 14pt;
+    color: rgb(255, 0, 0);
+    line-height: 15px;
+    border-left: 20px;
+}
+
+
+.contido-menu {
+    flex-wrap: wrap ;
+    justify-content: space-around;
+    flex-direction: row;
 }
